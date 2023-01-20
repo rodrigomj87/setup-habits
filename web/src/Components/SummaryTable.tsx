@@ -15,7 +15,7 @@ export function SummaryTable() {
                 {
                     weekDays.map((weekDay, index) => {
                         return (
-                            <div key={`${weekDay}-${index}`} className="text-zinc-400 text-xl h-10 w-10 flex items-center justify-center">
+                            <div key={`${weekDay}-${index}`} className="text-zinc-400 text-xl h-10 w-10 font-bold flex items-center justify-center">
                                 {weekDay}
                             </div>
                         )
@@ -28,7 +28,13 @@ export function SummaryTable() {
             <div className="grid grid-rows-7 grid-flow-col gap-3">
                 {
                     summaryDates.map(date => {
-                        return <HabitDay key={date.toString()} />
+                        return (
+                            <HabitDay
+                                amount={5}
+                                completed={Math.round(Math.random() * 5)}                                
+                                key={date.toString()}
+                            />
+                        )
                     })
                 }
                 {
