@@ -9,7 +9,8 @@ app.register(appRoutes)
 
 app.listen({
     port: 3333,
+    host: "0.0.0.0"
 }).then(() => {
     console.log("HTTP Server running")
-    console.log("Listening on http://localhost:3333");
+    console.log("Listening on http://192.168.100.108:3333");
 })
