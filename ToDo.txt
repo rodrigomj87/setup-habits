@@ -1,0 +1,4 @@
+Modal ou AlertDialog ao tentar incluir um Hábito sem titulo ou selecionar um dia
+Autenticação (Firebase ou  Auth0)
+Notificações Push / Service Workers
+Perfil público com gráfico de resumo
